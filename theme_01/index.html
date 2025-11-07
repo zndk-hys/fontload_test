@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS テンプレート</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+<style>
+body {font-family: "Noto Sans JP", sans-serif;}
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- ナビゲーションバー -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">グルメ オー ケータリング</a>
+    <!-- 右側のナビリンク（小画面では非表示） -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">私たちについて</a>
+      <a href="#menu" class="w3-bar-item w3-button">メニュー</a>
+      <a href="#contact" class="w3-bar-item w3-button">お問い合わせ</a>
+    </div>
+  </div>
+</div>
+
+<!-- ヘッダー -->
+<header class="w3-display-container w3-content w3-wide" id="home">
+  <img class="w3-image" src="./mv.webp" alt="ハンバーガー ケータリング" width="750" height="1125" loading="eager">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">ル・ケータリング</h1>
+  </div>
+</header>
+
+<!-- ページ内容 -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About セクション -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="テーブルセッティング" width="600" height="750" loading="lazy">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">ケータリングについて</h1><br>
+      <h5 class="w3-center">1889年から続く伝統</h5>
+      <p class="w3-large">このケータリングサービスは、1889年にスミス氏によって創設されました。以来、質の高い料理と丁寧なサービスを提供し続けています。私たちは常に <span class="w3-tag w3-light-grey">旬の</span> 食材のみを使用しています。</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">長い歴史の中で培われた経験をもとに、素材の味を最大限に引き出す料理を提供しています。どんなイベントでも、お客様のご要望に合わせて最適なプランをご提案いたします。</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu セクション -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">メニュー</h1><br>
+      <h4>ブレッドバスケット</h4>
+      <p class="w3-text-grey">焼きたてのフルーツブレッドとマフィンの盛り合わせ　¥550</p><br>
+    
+      <h4>ハニーアーモンドグラノーラとフルーツ</h4>
+      <p class="w3-text-grey">蜂蜜でトーストしたオーツにレーズン・アーモンド・デーツを加えたシリアル　¥700</p><br>
+    
+      <h4>ベルギーワッフル</h4>
+      <p class="w3-text-grey">バニラ風味の生地に麦芽粉を使用したワッフル　¥750</p><br>
+    
+      <h4>スクランブルエッグ</h4>
+      <p class="w3-text-grey">スクランブルエッグにローストパプリカ・ガーリック・青ねぎを添えて　¥750</p><br>
+    
+      <h4>ブルーベリーパンケーキ</h4>
+      <p class="w3-text-grey">シロップとバター、たっぷりのベリーを添えて　¥850</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="メニュー" style="width:100%" loading="lazy">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact セクション -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>お問い合わせ</h1><br>
+    <p>小規模から大規模まで、あらゆるイベントに対応したケータリングサービスを提供しています。見た目にも味にもこだわり、満足いただける料理をお届けします。お気軽にお問い合わせください。</p>
+    <p class="w3-text-blue-grey w3-large"><b>ケータリングサービス　42番地 リビングストリート　43043　ニューヨーク州</b></p>
+    <p>お電話（00553123-2323）またはメール（catering@catering.com）でもご連絡いただけます。下記フォームからもお問い合わせ可能です。</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="お名前" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="人数" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="日時" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="メッセージ・ご要望" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">送信する</button></p>
+    </form>
+  </div>
+  
+<!-- ページ終わり -->
+</div>
+
+<!-- フッター -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> によって構築</p>
+</footer>
+
+</body>
+</html>

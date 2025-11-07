@@ -13,7 +13,6 @@
       link.href = "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap";
       document.head.appendChild(link);
     }
-    (requestIdleCallback || setTimeout)(loadfont);
   </script>
   <style>
     body {
@@ -33,7 +32,7 @@
 <body>
   <main>
     <div class="mv">
-      <img src="./img/mv.webp" width="750" height="1125" loading="eager" decoding="async" fetchpriority="high">
+      <img src="./img/mv.webp" width="750" height="1125" loading="eager" decoding="async" fetchpriority="high" onload="loadfont()">
     </div>
     <div class="content">
       <p>
